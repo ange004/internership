@@ -1,1 +1,17 @@
+Serial.println("\nConnected!");
+}
 
+void playTone() {
+  digitalWrite(channel, 1000); // play sound
+  delay(300);
+  digitalWrite(channel, 0);    // stop
+  delay(200);
+  digitalWrite(buzzerPin,HIGH);
+  delay(400);
+  digitalWrite(buzzerPin,LOW);
+  delay(200);
+}
+
+void loop() {
+  playTone();
+}
